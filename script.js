@@ -17,3 +17,9 @@ function addItems(){
     }
     inputField.value = ''
 }
+
+List.addEventListener("click", function(e){
+    if (e.target.tagName === "SPAN"){
+        e.target.parentElement.remove()
+    }
+}, false);
